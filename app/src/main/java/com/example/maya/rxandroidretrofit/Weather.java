@@ -10,4 +10,5 @@ import rx.Observable;
 public interface Weather {
     @GET("weather?")
     Observable<GetCoord> getCurrent(@Query("q") String city,@Query("appid") String appid);
+
 }
